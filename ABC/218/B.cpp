@@ -8,18 +8,20 @@ using namespace std;
 
 int main()
 {
-    char Alphabet[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    string Alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     vector<int> P(26);
-    for (int i = 0; i < 26; i++)
+    for (int i = 0; i < P.size(); i++)
     {
         cin >> P[i];
     }
-    char S[26];
-    for (int i = 0; i < 26; i++)
+
+    string ans;
+    for (int i = 0; i < P.size(); i++)
     {
-        S[i] = Alphabet[P[i] - 1];
+
+        ans += Alphabet.at(P[i] - 1);
     }
 
-    cout << S << endl;
+    cout << ans << endl;
 }
