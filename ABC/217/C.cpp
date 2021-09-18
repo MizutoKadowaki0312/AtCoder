@@ -20,7 +20,6 @@ int main()
     {
         int t = P[i] - 1;
         Q[t] = i + 1;
-        //cout << "Q[" << t << "] = " << Q[t] << endl;
     }
 
     for (int i = 0; i < N; i++)
