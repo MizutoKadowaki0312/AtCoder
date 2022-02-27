@@ -14,7 +14,7 @@ int main()
 
     cin >> str1;
 
-    //string は " " で囲む．
+    // string は " " で囲む．
     str2 = " , world !";
 
     cout << str1 << str2 << endl;
