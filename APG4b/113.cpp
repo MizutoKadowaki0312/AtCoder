@@ -1,25 +1,64 @@
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 using namespace std;
+// compile : g++ -std=c++17 hogehoge.cpp
 
 int main()
 {
-    int N;
-    N = 3;
-    vector<int> vec(N);
-    for (int i = 0; i < N; i++)
-    {
-        cin >> vec.at(i);
-    }
-    //文字列
-    string str;
-    str = "abcd";
-    cout << str.at(0) << endl;
-    cout << str.size() << endl;
+    // vector<int> vec;
+    // vec = {25, 100, 64};
+    // cout << vec.at(0) << endl;
+    // cout << vec.size() << endl;
 
-    //配列
-    vector<int> v;
-    v = {25, 100, 64};
-    cout << v.at(0) << endl;
-    cout << v[0] << endl;
-    cout << v.size() << endl;
+    // vector<int> vec(3);
+    // for (int i = 0; i < vec.size(); i++)
+    // {
+    //     /* code */
+    //     cout << vec.at(i) << endl;
+    // }
+
+    // int N;
+    // vector<int> math(N);
+    // vector<int> english(N);
+
+    // cin >> N;
+
+    // for (int i = 0; i < N; i++)
+    // {
+    //     /* code */
+    //     cin >> math.at(i);
+    // }
+
+    // for (int i = 0; i < N; i++)
+    // {
+    //     /* code */
+    //     cin >> english.at(i);
+    // }
+
+    // for (int i = 0; i < N; i++)
+    // {
+    //     /* code */
+    //     cout << math.at(i) + english.at(i) << endl;
+    // }
+
+    vector<int> vec(3, 5);
+    for (int i = 0; i < vec.size(); i++)
+    {
+        /* code */
+        cout << vec.at(i) << endl;
+    }
+    vec = {1, 2, 3};
+    vec.push_back(10);
+    for (int i = 0; i < vec.size(); i++)
+    {
+        /* code */
+        cout << vec.at(i) << endl;
+        // cout << vec[i] << endl;
+    }
+    vec.pop_back(); // delete end element
+    for (int i = 0; i < vec.size(); i++)
+    {
+        /* code */
+        cout << vec.at(i) << endl;
+        // cout << vec[i] << endl;
+    }
 }
