@@ -52,4 +52,9 @@ int main()
     vec03.erase(unique(vec03.begin(), vec03.end()), vec03.end());
     cout << "erase after unique and sort : ";
     printVec(vec03);
+
+    /*
+        uniqueをするとゴミ要素の最初をポインタとして返すので，そこを始点としてeraseしているイメージ．
+        https://qiita.com/takuya000885/items/3ead0668127033070b65
+    */
 }
