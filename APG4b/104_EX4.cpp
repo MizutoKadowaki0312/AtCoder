@@ -2,7 +2,6 @@
 using namespace std;
 // compile : g++ -std=c++17 hogehoge.cpp
 
-
 int main()
 {
     // second of year
@@ -11,5 +10,5 @@ int main()
     cout << seconds << endl;
     cout << 2 * seconds << endl;
     cout << 5 * seconds << endl;
-    cout << 10 * seconds << endl; 
+    cout << 10 * seconds << endl;
 }
